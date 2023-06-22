@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>welcome</title>
+  <script>
+    function greet() {
+      var name = document.getElementById("name").value;
+      var message = "Hello, " + name + "!";
+      document.getElementById("output").textContent = message;
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome mr/mrs? </h1>
+  <label for="name">Enter your name:</label>
+  <input type="text" id="name">
+  <button onclick="greet()">Greet</button>
+  <p id="output"></p>
+</body>
+</html>
